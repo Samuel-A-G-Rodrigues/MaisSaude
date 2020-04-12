@@ -73,7 +73,7 @@ public class RefeicaoPrevista {
         hash = 47 * hash + Objects.hashCode(this.valCalorico);
         return hash;
     }
-
+ 
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {
