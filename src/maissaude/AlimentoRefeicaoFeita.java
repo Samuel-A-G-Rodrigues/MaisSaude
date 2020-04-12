@@ -2,11 +2,11 @@ package maissaude;
 
 import java.util.Objects;
 
-public class Alimento_Refeicao_Feita {
+public class AlimentoRefeicaoFeita {
 
     private Double quantidadeAlimento;
 
-    public Alimento_Refeicao_Feita(Double quantidadeAlimento) {
+    public AlimentoRefeicaoFeita(Double quantidadeAlimento) {
 
         this.quantidadeAlimento = quantidadeAlimento;
 
@@ -44,12 +44,13 @@ public class Alimento_Refeicao_Feita {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Alimento_Refeicao_Feita other = (Alimento_Refeicao_Feita) obj;
+        final AlimentoRefeicaoFeita other = (AlimentoRefeicaoFeita) obj;
         if (!Objects.equals(this.quantidadeAlimento, other.quantidadeAlimento)) {
             return false;
         }
         return true;
     }
+
     @Override
     public String toString() {
         return String.format(quantidadeAlimento + ".");
