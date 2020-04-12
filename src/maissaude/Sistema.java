@@ -5,6 +5,8 @@
  */
 package maissaude;
 
+import java.sql.Time;
+
 /**
  *
  * @author Samuel Rodrigues
