@@ -9,6 +9,6 @@ package maissaude;
  *
  * @author Samuel Rodrigues
  */
-public class Alimento_Refeicao_Prevista {
+public class AlimentoRefeicaoPrevista {
     
 }
