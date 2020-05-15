@@ -12,7 +12,13 @@ package maissaude;
 public class InformacaoNutricional {
     private Double valInformacao;
     private String nomInformacao;
-public InformacaoNutricional(Double valInformacao, String nomInformacao) {
+
+    /**
+     *
+     * @param valInformacao
+     * @param nomInformacao
+     */
+    public InformacaoNutricional(Double valInformacao, String nomInformacao) {
 
         this.valInformacao = valInformacao;
         this.nomInformacao = nomInformacao;
@@ -31,6 +37,7 @@ public InformacaoNutricional(Double valInformacao, String nomInformacao) {
     public String getNomInformacao() {
         return nomInformacao;
     }
+    
 
         @Override
     public String toString() {

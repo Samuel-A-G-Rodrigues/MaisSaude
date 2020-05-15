@@ -17,6 +17,12 @@ public class RefeicaoFeita {
     private String nomRefeicao;
     private Double valCalorico;
 
+    /**
+     *
+     * @param desRefeicao
+     * @param nomRefeicao
+     * @param valCalorico
+     */
     public RefeicaoFeita(String desRefeicao, String nomRefeicao, Double valCalorico) {
 
         this.desRefeicao = desRefeicao;
@@ -32,7 +38,7 @@ public class RefeicaoFeita {
     }
 
     /**
-     * @param desRefeicaoF the desRefeicaoF to set
+     * @param desRefeicao
      */
     public void setDesRefeicao(String desRefeicao) {
         this.desRefeicao = desRefeicao;
@@ -46,7 +52,7 @@ public class RefeicaoFeita {
     }
 
     /**
-     * @param nomRefeicaoF the nomRefeicaoF to set
+     * @param nomRefeicao
      */
     public void setNomRefeicao(String nomRefeicao) {
         this.nomRefeicao = nomRefeicao;

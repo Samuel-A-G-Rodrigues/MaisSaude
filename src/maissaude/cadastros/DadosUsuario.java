@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package maissaude;
+package maissaude.cadastros;
 
+import maissaude.cadastros.Perfil;
 import java.util.Date;
 import java.util.Objects;
 
@@ -21,6 +22,15 @@ public class DadosUsuario {
     private String senha;
     private Perfil perfilUsuario;
     
+    /**
+     *
+     * @param nome
+     * @param nascimento
+     * @param email
+     * @param genero
+     * @param telefone
+     * @param senha
+     */
     public DadosUsuario( String nome, Date nascimento, 
             String email, String genero, String telefone, String senha){
     
@@ -100,6 +110,7 @@ public class DadosUsuario {
         return hash;
     }
 
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -135,6 +146,11 @@ public class DadosUsuario {
         }
         return true;
     }
+    @Override
+    public String toString() {
+        return "DadosUsuario{" + "nome=" + nome + ", nascimento=" + nascimento + ", email=" + email + ", genero=" + genero + ", telefone=" + telefone + '}';
+    }
+
 }
 
     

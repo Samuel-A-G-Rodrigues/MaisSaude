@@ -6,6 +6,7 @@
 package maissaude;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  *
@@ -18,6 +19,14 @@ public class Lembrete {
     private String desLembrete;
     private boolean indLembrete;
    //Construtores 
+
+    /**
+     *
+     * @param nomLembrete
+     * @param data
+     * @param desLembrete
+     * @param indLembrete
+     */
     public Lembrete(String nomLembrete, Date data, String desLembrete, boolean indLembrete) {
 
         this.nomLembrete = nomLembrete;
@@ -26,6 +35,11 @@ public class Lembrete {
         this.indLembrete = indLembrete;
     }
     //Encapsulamentos
+
+    /**
+     *
+     * @return
+     */
     public String getNomLembrete() {
         return nomLembrete;
     }
@@ -79,6 +93,43 @@ public class Lembrete {
         this.indLembrete = indLembrete;
     }
     //Metodos
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 43 * hash + Objects.hashCode(this.nomLembrete);
+        hash = 43 * hash + Objects.hashCode(this.data);
+        hash = 43 * hash + Objects.hashCode(this.desLembrete);
+        hash = 43 * hash + (this.indLembrete ? 1 : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Lembrete other = (Lembrete) obj;
+        if (this.indLembrete != other.indLembrete) {
+            return false;
+        }
+        if (!Objects.equals(this.nomLembrete, other.nomLembrete)) {
+            return false;
+        }
+        if (!Objects.equals(this.desLembrete, other.desLembrete)) {
+            return false;
+        }
+        if (!Objects.equals(this.data, other.data)) {
+            return false;
+        }
+        return true;
+    }
     
 
     @Override

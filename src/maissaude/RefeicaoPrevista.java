@@ -18,6 +18,12 @@ public class RefeicaoPrevista {
     private String nomRefeicao;
     private Double valCalorico;
 
+    /**
+     *
+     * @param horRefeicao
+     * @param nomRefeicao
+     * @param valCalorico
+     */
     public RefeicaoPrevista(Time horRefeicao, String nomRefeicao, Double valCalorico) {
 
         this.horRefeicao = horRefeicao;

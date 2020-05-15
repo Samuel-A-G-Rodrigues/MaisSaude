@@ -19,7 +19,9 @@ public class Rotina {
     private boolean metaAlcancada;
 
     /**
-     * @return the valorCalorico
+     * @param valorCalorico
+     * @param metaAlcancada
+     * @param numMeta
      */
     public Rotina(int valorCalorico, double numMeta, boolean metaAlcancada) {
 
@@ -28,6 +30,10 @@ public class Rotina {
         this.metaAlcancada = metaAlcancada;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getValorCalorico() {
         return valorCalorico;
     }
@@ -68,21 +74,50 @@ public class Rotina {
     }
 
     //Metodos
+    //
+
+    /**
+     *
+     * @param nomLembrete
+     * @param data
+     * @param desLembrete
+     * @return
+     */
     public String cadastrarLembrete(String nomLembrete, Date data, String desLembrete) {
         Lembrete lembrete = new Lembrete(nomLembrete, data, desLembrete, false);
         return lembrete.toString();
     }
 
+    /**
+     *
+     * @param horRefeicao
+     * @param nomRefeicao
+     * @param valCalorico
+     * @return
+     */
     public String cadastrarRefeicaoPrevista(Time horRefeicao, String nomRefeicao, Double valCalorico) {
         RefeicaoPrevista refeicao = new RefeicaoPrevista(horRefeicao, nomRefeicao, valCalorico);
         return refeicao.toString();
     }
 
+    /**
+     *
+     * @param desRefeicao
+     * @param nomRefeicao
+     * @param valCalorico
+     * @return
+     */
     public String cadastrarRefeicaoFeita(String desRefeicao, String nomRefeicao, Double valCalorico) {
         RefeicaoFeita refeicao = new RefeicaoFeita(desRefeicao, nomRefeicao, valCalorico);
         return refeicao.toString();
     }
 
+    /**
+     *
+     * @param valInformacao
+     * @param nomInformacao
+     * @return
+     */
     public String informacaoNutricional(Double valInformacao, String nomInformacao) {
         InformacaoNutricional infoNutricional = new InformacaoNutricional(valInformacao, nomInformacao);
         return infoNutricional.toString();
@@ -92,4 +127,5 @@ public class Rotina {
     public String toString() {
         return String.format(numMeta + ", " + metaAlcancada + ", ");
     }
+    
 }

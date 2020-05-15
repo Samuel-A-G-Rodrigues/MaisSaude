@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package maissaude;
+package maissaude.cadastros;
 
 import java.util.Date;
 import java.util.Objects;
@@ -18,12 +18,19 @@ public class Perfil {
     private Date dataRegistroDados;
     private DadosUsuario dados_usuarios;
 
-   
-
+    /**
+     *
+     */
     public Perfil(){
     
     }  
         
+    /**
+     *
+     * @param altura
+     * @param peso
+     * @param dataRegistroDados
+     */
     public Perfil(Double altura, Double peso, Date dataRegistroDados){
         this.altura = altura;
         this.peso = peso;

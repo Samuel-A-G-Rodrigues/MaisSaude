@@ -10,6 +10,11 @@ package maissaude;
  * @author Samuel Rodrigues
  */
 public class MaisSaude {
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args){
 
     }
