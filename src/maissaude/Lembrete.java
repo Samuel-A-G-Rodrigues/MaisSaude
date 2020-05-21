@@ -17,7 +17,7 @@ public class Lembrete {
     private String nomLembrete;
     private Date data;
     private String desLembrete;
-    private boolean indLembrete;
+    private boolean indLembrete = false;
    //Construtores 
 
     /**
@@ -27,14 +27,21 @@ public class Lembrete {
      * @param desLembrete
      * @param indLembrete
      */
-    public Lembrete(String nomLembrete, Date data, String desLembrete, boolean indLembrete) {
+    public Lembrete(String nomLembrete, Date data){//, String desLembrete, boolean indLembrete) {
+
+        this.nomLembrete = nomLembrete;
+        this.data = data;
+        //this.desLembrete = desLembrete;
+        //this.indLembrete = indLembrete;
+    }
+     public Lembrete(String nomLembrete, Date data, String desLembrete, boolean indLembrete) {
 
         this.nomLembrete = nomLembrete;
         this.data = data;
         this.desLembrete = desLembrete;
         this.indLembrete = indLembrete;
     }
-    //Encapsulamentos
+//Encapsulamentos
 
     /**
      *

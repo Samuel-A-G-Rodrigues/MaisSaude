@@ -83,7 +83,7 @@ public class Rotina {
      * @param desLembrete
      * @return
      */
-    public String cadastrarLembrete(String nomLembrete, Date data, String desLembrete) {
+    public String updateLembrete(String nomLembrete, Date data, String desLembrete, boolean indLembrete) {
         Lembrete lembrete = new Lembrete(nomLembrete, data, desLembrete, false);
         return lembrete.toString();
     }

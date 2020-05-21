@@ -34,7 +34,7 @@ public class Alimento {
         this.desAlimento = desAlimento;
         this.valCalorico = valCalorico;
     }
-    
+
     /**
      *
      * @return
